@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name | CS Student & Developer</title>
+  <title>Nathan Abdulazeez | CS Student & Developer</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -12,9 +12,8 @@
 
   <!-- NAVBAR -->
   <nav class="navbar">
-
     <div class="logo">
-      <img src="images/profile.jpg" alt="Nathan Abdulazeez" class="nav-avatar" />
+      <img src="images/profilePicture.JPEG" alt="Nathan Abdulazeez" class="nav-avatar" />
       Nathan Abdulazeez
     </div>
     <ul class="nav-links">
@@ -28,17 +27,24 @@
   <!-- HERO SECTION -->
   <section class="hero" id="home">
     <div class="hero-text">
-      <p class="greeting"></p>
-     
+      <p class="greeting">Hi, I'm <span class="typed-text"></span><span class="cursor">|</span></p>
       <h1 class="name">Nathan Abdulazeez</h1>
       <h2 class="tagline">Innovator. Problem Solver. Builder.</h2>
       <p class="description">
-        TBD
+        I'm a Computer Science student at NJIT with real-world experience
+        building full-stack applications. From healthcare platforms to
+        church community tools, I build software that solves real problems
+        for real people.
       </p>
       <div class="hero-buttons">
         <a href="#projects" class="btn btn-primary">View My Work</a>
         <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        <a href="#" class="btn btn-outline" download>Download Résumé</a>
       </div>
+    </div>
+    <div class="hero-image">
+      <div class="image-glow"></div>
+      <img src="images/profilePicture.JPEG" alt="Nathan Abdulazeez" class="hero-avatar" />
     </div>
   </section>
 
@@ -46,14 +52,38 @@
   <section class="about" id="about">
     <h2 class="section-title">ABOUT ME</h2>
     <div class="about-content">
-      <p>
-        I'm a Computer Science major with a passion for technology, innovation, and solving real-world problems through creative solutions. 
-        I am driven by a deep curiosity for how things work and a strong desire to contribute to advancements in software development, 
-        artificial intelligence, and emerging technologies.
-        Currently expanding my skills through academic coursework, hands-on projects, and internships, 
-        I am committed to continuous learning and growth. 
-        I am excited to collaborate with others, bring new ideas to life, and build technologies that make a positive impact.
-      </p>
+      <div class="about-text">
+        <p>
+          I'm a Computer Science major with a passion for technology, innovation, and solving
+          real-world problems through creative solutions. I am driven by a deep curiosity for
+          how things work and a strong desire to contribute to advancements in software
+          development, artificial intelligence, and emerging technologies.
+        </p>
+        <br/>
+        <p>
+          Currently expanding my skills through academic coursework, hands-on projects, and
+          internships, I am committed to continuous learning and growth. I'm excited to
+          collaborate with others, bring new ideas to life, and build technologies that make
+          a positive impact.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">2+</span>
+            <span class="stat-label">Years Coding</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Live Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">NJIT</span>
+            <span class="stat-label">CS Student</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-image-wrap">
+        <img src="images/profilePicture.JPEG" alt="Nathan Abdulazeez" class="about-photo" />
+      </div>
     </div>
   </section>
 
@@ -63,29 +93,36 @@
     <div class="projects-grid">
 
       <div class="project-card">
-        <h3>HGCCNJ WEB</h3>
-        <p>Short description of what this project does and what problem it solves.</p>
+        <div class="project-icon">⛪</div>
+        <h3>HGCCNJ Platform</h3>
+        <p>Church community platform with event management, sermon
+          streaming, and Stripe-powered donations. Built with React,
+          React Native, and Firebase.</p>
         <div class="tech-tags">
-          <span>HTML</span>
-          <span>CSS</span>
+          <span>React</span>
+          <span>React Native</span>
           <span>JavaScript</span>
+          <span>Firebase</span>
+          <span>Stripe</span>
         </div>
         <div class="project-links">
-          <a href="#">GitHub</a>
-          <a href="#">Live Demo</a>
+          <a href="https://hccnj.org" target="_blank">🔗 Live Demo</a>
         </div>
       </div>
 
       <div class="project-card">
-        <h3>Project Name</h3>
-        <p>Short description of what this project does and what problem it solves.</p>
+        <div class="project-icon">🏥</div>
+        <h3>Priority Groups Web App</h3>
+        <p>Healthcare staffing platform with role-based portals for
+          nurses and admins. Automated scheduling workflows and
+          reporting dashboards built for real daily operations.</p>
         <div class="tech-tags">
-          <span>Java</span>
-          <span>Spring Boot</span>
+          <span>JavaScript</span>
+          <span>Google Apps Script</span>
+          <span>HTML & CSS</span>
         </div>
         <div class="project-links">
-          <a href="#">GitHub</a>
-          <a href="#">Live Demo</a>
+          <a href="https://github.com/nateoa1" target="_blank">💻 View Code</a>
         </div>
       </div>
 
@@ -95,30 +132,56 @@
   <!-- SKILLS SECTION -->
   <section class="skills" id="skills">
     <h2 class="section-title">SKILLS</h2>
-    <div class="skills-grid">
-      <div class="skill-item">Java</div>
-      <div class="skill-item">JavaScript</div>
-      <div class="skill-item">HTML & CSS</div>
-      <div class="skill-item">Git & GitHub</div>
-      <div class="skill-item">Data Structures</div>
-      <div class="skill-item">Algorithms</div>
+    <div class="skills-categories">
+
+      <div class="skill-category">
+        <h3 class="category-label">Languages</h3>
+        <div class="skills-grid">
+          <div class="skill-item">Java</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">HTML & CSS</div>
+          <div class="skill-item">Python</div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="category-label">Frameworks & Libraries</h3>
+        <div class="skills-grid">
+          <div class="skill-item">React</div>
+          <div class="skill-item">React Native</div>
+          <div class="skill-item">Node.js</div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="category-label">Tools & Platforms</h3>
+        <div class="skills-grid">
+          <div class="skill-item">Git & GitHub</div>
+          <div class="skill-item">Firebase</div>
+          <div class="skill-item">Stripe</div>
+          <div class="skill-item">Google Apps Script</div>
+          <div class="skill-item">Data Structures</div>
+          <div class="skill-item">Algorithms</div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- CONTACT SECTION -->
   <section class="contact" id="contact">
     <h2 class="section-title">GET IN TOUCH</h2>
-    <p>I'm always open to new opportunities and connections.</p>
+    <p class="contact-sub">I'm always open to new opportunities, collaborations, and connections.</p>
     <div class="contact-links">
-      <a href="mailto:kitannathaniel14@gmail.com" class="btn btn-primary">Email Me</a>
-      <a href="https://github.com/nateoa1" class="btn btn-secondary">GitHub</a>
-      <a href="https://www.linkedin.com/in/nathan-abdulazeez/" class="btn btn-secondary">LinkedIn</a>
+      <a href="mailto:kitannathaniel14@gmail.com" class="btn btn-primary">📧 Email Me</a>
+      <a href="https://github.com/nateoa1" target="_blank" class="btn btn-secondary">GitHub</a>
+      <a href="https://www.linkedin.com/in/nathan-abdulazeez/" target="_blank" class="btn btn-secondary">LinkedIn</a>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>Built by Nathan Abdulazeez © 2026</p>
+    <p>Designed & Built by Nathan Abdulazeez &copy; 2026</p>
   </footer>
 
   <script src="js/script.js"></script>
